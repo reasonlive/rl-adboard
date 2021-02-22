@@ -1,0 +1,123 @@
+@import './mixins.sass'
+
+a
+	color: black
+	text-decoration:0
+
+input
+	@include flex-center()
+
+
+//////bright theme
+/////////////////////
+
+
+.bright-managed-item
+	@include radius()
+	background: orange
+	color: black
+	&:hover
+		background: black
+		color: orange
+
+.bright-viewed-item
+	@include radius()
+	background: orange
+	color: black
+
+//////////////////////////
+
+
+
+///////strict theme
+////////////////////////////
+.strict-managed-item
+	@include radius()
+	background: aqua
+	color: black
+	font-family: sans-serif
+	font-size: 20px
+	font-style: "DejaVu Sans"
+	&:hover
+		cursor: pointer
+		background: azure
+
+
+.strict-viewed-item
+	@include radius()
+	background: aqua
+	color: black
+
+///////////////////////////////
+
+
+
+//////////light theme
+////////////////////////////////////
+
+
+.light-managed-item
+	@include radius()
+	background: forestgreen
+	color: black
+	&:hover
+		background: lightseagreen
+	&::placeholder
+		color: rgba(0,0,0,0.7)
+
+
+.light-viewed-item
+	@include radius()
+	background: forestgreen
+	color: black
+
+
+/////////////////////////////
+
+
+
+
+
+///////danger theme
+/////////////////////////////////
+
+.danger-managed-item
+	@include radius()
+	background: red
+	color: black
+	&:hover
+		background: firebrick
+		color: white
+
+.danger-viewed-item
+	@include radius
+	background: red
+	color: black
+
+////////////////////////////////
+
+
+
+//////simple theme
+//////////////////////////////////
+
+.simple-managed-item
+	@include radius
+	background: tan
+	&:hover
+		background: wheat
+		cursor: pointer
+
+.simple-viewed-item
+	@include radius
+	background: tan
+
+
+
+	
+
+
+
+		
+
+
